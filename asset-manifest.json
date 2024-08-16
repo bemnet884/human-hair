@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Human-Hair/static/css/main.c3cd6985.css",
-    "main.js": "/Human-Hair/static/js/main.15cf027c.js",
+    "main.js": "/Human-Hair/static/js/main.ea8ded96.js",
     "static/js/453.24a0db5a.chunk.js": "/Human-Hair/static/js/453.24a0db5a.chunk.js",
     "static/media/Hoooo.jpg": "/Human-Hair/static/media/Hoooo.89cb194eea24d183777f.jpg",
     "static/media/hairBundle1.jpg": "/Human-Hair/static/media/hairBundle1.b36fc46741c44ac8a91c.jpg",
@@ -33,11 +33,11 @@
     "static/media/chevron-left.svg": "/Human-Hair/static/media/chevron-left.d144cee07ec45d8aeea199f2e9b24f85.svg",
     "static/media/chevron-right.svg": "/Human-Hair/static/media/chevron-right.764ae13a819637769ae100f9170e8d6e.svg",
     "main.c3cd6985.css.map": "/Human-Hair/static/css/main.c3cd6985.css.map",
-    "main.15cf027c.js.map": "/Human-Hair/static/js/main.15cf027c.js.map",
+    "main.ea8ded96.js.map": "/Human-Hair/static/js/main.ea8ded96.js.map",
     "453.24a0db5a.chunk.js.map": "/Human-Hair/static/js/453.24a0db5a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c3cd6985.css",
-    "static/js/main.15cf027c.js"
+    "static/js/main.ea8ded96.js"
   ]
 }
