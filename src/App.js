@@ -75,7 +75,7 @@ function AppContent() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Human-Hair">
       <AppContent />
     </Router>
   );
