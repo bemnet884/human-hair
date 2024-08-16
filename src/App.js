@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, Navigate,useLocation } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
@@ -75,7 +75,7 @@ function AppContent() {
 
 function App() {
   return (
-    <Router basename="/Human-Hair">
+    <Router>
       <AppContent />
     </Router>
   );
