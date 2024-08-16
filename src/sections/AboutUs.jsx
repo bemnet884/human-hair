@@ -5,7 +5,7 @@ const AboutUs = () => {
     <section className="py-12 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="flex flex-wrap gap-8 justify-center">
-          {/* Overview Section */}
+
           <div className="bg-white shadow-md rounded-lg p-6 border-t-8 border-primary w-full md:w-1/3">
             <h2 className="text-4xl font-bold font-palanquin mb-4 text-center">
               About <span className="text-primary">Fandisha's Bundles</span>
@@ -15,7 +15,6 @@ const AboutUs = () => {
             </p>
           </div>
 
-          {/* Mission Statement Section */}
           <div className="bg-white shadow-md rounded-lg p-6 border-t-8 border-primary w-full md:w-1/3">
             <h3 className="text-3xl font-bold font-palanquin mb-4 text-center">Our Mission</h3>
             <p className="text-lg text-gray-700">
@@ -23,7 +22,6 @@ const AboutUs = () => {
             </p>
           </div>
 
-          {/* Call to Action Section */}
           <div className="bg-white shadow-md rounded-lg p-6 border-t-8 border-primary w-full md:w-1/3 text-center">
             <h3 className="text-3xl font-bold font-palanquin mb-4">Get in Touch</h3>
             <p className="text-lg text-gray-700 mb-8">

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
@@ -20,36 +20,36 @@ import SimpleNav from "./sections/SimpleNav";
 function AppContent() {
   const location = useLocation();
   
-  const noHeaderFooterRoutes = ["/Contact-Us","/Sign-In","/About-Us"];
+  const noHeaderFooterRoutes = ["/Contact-Us", "/Sign-In", "/About-Us"];
   const shouldRenderHeaderFooter = !noHeaderFooterRoutes.includes(location.pathname);
 
   return (
-    <main className='relative'>
-      {shouldRenderHeaderFooter ? <Nav /> : <SimpleNav/>}
+    <main className="relative">
+      {shouldRenderHeaderFooter ? <Nav /> : <SimpleNav />}
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <section className='xl:padding-l wide:padding-r padding-b'>
+              <section className="xl:padding-l wide:padding-r padding-b">
                 <Hero />
               </section>
-              <section className='padding'>
+              <section className="padding">
                 <PopularProducts />
               </section>
-              <section className='padding'>
+              <section className="padding">
                 <SuperQuality />
               </section>
-              <section className='padding-x py-10'>
+              <section className="padding-x py-10">
                 <Services />
               </section>
-              <section className='padding'>
+              <section className="padding">
                 <SpecialOffer />
               </section>
-              <section className='bg-pale-blue padding'>
+              <section className="bg-pale-blue padding">
                 <CustomerReview />
               </section>
-              <section className='padding-x sm:py-32 py-16 w-full'>
+              <section className="padding-x sm:py-32 py-16 w-full">
                 <Subscribe />
               </section>
             </>
@@ -61,10 +61,11 @@ function AppContent() {
         <Route path="/Sign-In" element={<SignInForm />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/specialOffer/:id" element={<SpecialOfferDetail />} />
-
+        {/* Fallback route */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       {shouldRenderHeaderFooter && (
-        <section className='bg-violet-300 padding-x padding-t pb-8'>
+        <section className="bg-violet-300 padding-x padding-t pb-8">
           <Footer />
         </section>
       )}
